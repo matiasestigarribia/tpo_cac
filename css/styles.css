@@ -1,0 +1,159 @@
+/* css de index.html */
+
+
+/* inicio CSS menu de navegacion */
+nav {
+    background-color: #e1ccf5;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: left;
+
+}
+
+nav li:hover {
+    background-color: #af62f8;
+}
+
+nav li {
+    margin: 0 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.2rem;
+}
+
+/* fin CSS menu de navegacion */
+
+
+/* inicio CSS principal de index.html */
+
+main {
+    background-color: #dab3ff;
+}
+
+.encabezado {
+    border-style: solid;
+    border-color: #000;
+    border-width: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.encabezado img {
+    padding: 0.5rem;
+    border-radius: 20px;
+}
+
+
+.titulo {
+    font-size: 40px;
+    font-family: 'Dancing Script', cursive;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+.subtitulo {
+    margin: 0;
+    color: #000;
+    display: inline;
+    font-size: 50px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.sabor {
+    color: #fff;
+    margin: 7px 0;
+    font-size: 50px;
+    font-weight: 600;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.7);
+    font-family: 'Dancing Script', cursive;
+    margin-top: 0;
+}
+
+.linea-division {
+    width: 80%;
+    height: 2px;
+    background-color: #36221c;
+}
+
+.fotos {
+    border: 0px;
+    padding: 0px;
+    text-align: center;
+    background-color: #000;
+}
+
+/* fin CSS principal index.html */
+
+/* inicio CSS footer */
+
+footer {
+    background-color: #e1ccf5;
+    padding: 1rem;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer li {
+    margin: 0 1rem;
+}
+
+.redes img {
+    border-radius: 7px;
+}
+
+.legal {
+    text-align: left;
+}
+
+/* fin CSS footer */
+
+/* inicio CSS productos.html */
+
+.productos {
+    padding-left: 3rem;
+    border-style: solid;
+}
+
+.productos img {
+    width: 20rem;
+    border-radius: 10px;
+}
+
+.descripcion {
+    display: flex;
+    padding: 1rem;
+    padding: 0;
+    margin-bottom: 0.2rem;
+}
+
+
+
+.prod_detalle {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+header h1 {
+    background-color: #dab3ff;
+    text-align: center;
+}
+
+/* fin CSS productos.html */
