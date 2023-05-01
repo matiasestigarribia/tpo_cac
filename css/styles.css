@@ -157,3 +157,12 @@ header h1 {
 }
 
 /* fin CSS productos.html */
+/*maps*/
+section {
+	padding: 50px;
+}
+
+#map {
+	height: 500px;
+	width: 100%;
+}
