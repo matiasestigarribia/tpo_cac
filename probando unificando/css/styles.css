@@ -1,0 +1,175 @@
+
+/* css de index.html */
+
+
+/* inicio CSS menu de navegacion */
+nav {
+    background-color: #000000;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: left;
+
+}
+nav li {
+    margin: 0 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    font-family: 'Dancing Script';
+}
+nav a:hover {
+    font-weight: bolder;
+}
+
+
+/* fin CSS menu de navegacion */
+
+
+/* inicio CSS principal de index.html */
+
+main {
+    background-color: #f8e0042a;
+    font-family: 'Dancing Script', cursive;
+    padding-bottom: 3rem;
+}
+
+.encabezado {
+    background-color: #f0b000;
+    border-style: solid;
+    border-color: #000;
+    border-width: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.encabezado img {
+    padding: 0.5rem;
+    border-radius: 20px;   
+}
+
+.seccion {
+    padding-top: 5rem;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+section img {
+    border-radius: 10px;
+}
+
+.titulo {
+    font-size: 2rem;
+    font-family: 'Dancing Script', cursive;
+    margin-bottom: 40px;
+    color: #000;
+}
+
+.subtitulo {
+    margin: 0;
+    color: #000;
+    display: inline;
+    font-size: 50px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.sabor { 
+    color: #fff;
+    margin: 7px 0;
+    font-size: 50px;
+    font-weight: 600;
+    text-shadow: 2px 2px 1px rgba(0,0,0,0.7);
+    font-family: 'Dancing Script', cursive;
+    margin-top: 0;
+}
+
+.linea-division {
+    width: 80%;
+    height: 2px;
+    background-color: #36221c;
+}
+
+.fotos {
+    border: 0px;
+    padding: 0px;
+    text-align: center;
+    background-color: #000;
+}
+/* fin CSS principal index.html */
+
+/* inicio CSS footer */
+
+footer {
+    background-color: #000;
+    padding: 1rem;
+    text-align: center;
+    color: #fff;
+    font-family: 'Dancing Script', cursive;
+}
+
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer li {
+    margin: 0 1rem;
+}
+
+.redes img {
+    border-radius: 7px;
+}
+
+.legal {
+    text-align: left;
+}
+
+/* fin CSS footer */
+
+/* inicio CSS productos.html */
+
+.productos {
+    padding-left: 3rem;
+    border-style: solid;
+}
+
+.productos img {
+    width: 20rem;
+    border-radius: 10px;
+}
+
+.descripcion {
+    display: flex;
+    padding: 1rem;
+    padding: 0;
+    margin-bottom: 0.2rem;
+}
+
+
+
+.prod_detalle {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+#tit {
+margin: 0;
+text-align: center;
+font-weight: bold;
+font-size: 4rem;
+}
+
+/* fin CSS productos.html */

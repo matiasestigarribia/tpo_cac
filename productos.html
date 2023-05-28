@@ -6,47 +6,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productos</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link href="css/styles.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap" rel="stylesheet">
     <script src="js/script.js" defer></script>
 </head>
 
 <body>
     <!-- Menu de navegación -->
     <nav>
-        <ul>
-            <li> <a href="index.html">Home</a></li>
-            <li> <a href="productos.html">Productos</a></li>
-            <li> <a href="nosotros.html">Nosotros</a></li>
-            <li> <a href="contacto.html">Contacto</a></li>
-        </ul>
+        <div class="navbar">
+            <ul class="navbar-list">
+                <li> <a href="index.html">Home</a></li>
+                <li> <a href="productos.html">Productos</a></li>
+                <li> <a href="Nosotros.html">Nosotros</a></li>
+                <li> <a href="Contacto.html">Contacto</a></li>
+            </ul>
+            <div class="logo-container">
+                <img src="image/logo.jpg" alt="Logo de la empresa" id="logo-empresa">
+            </div>
+        </div>
     </nav>
 
     <!-- Sección principal -->
 
     <main>
-        <header>
-            <h1>Productos</h1>
+        <header class="encabezado">
+            <h1><span id="tit">Productos</span> </h1>
+            <h2>Slogan:Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia vero vel </h2>
         </header>
 
         <!-- Sección hamburguesas -->
         <section class="productos">
             <h2>Hamburguesas</h2>
             <div class="descripcion">
-                <img src="image/hamburguesa2.jpg" alt="Hamburguesa">
+                <img src="image/hamburguesa2.png" alt="Hamburguesa">
                 <p class="prod_detalle"><strong>Hamburguesa simple:</strong> Lorem ipsum dolor sit amet consectetur
                     adipisicing elit. Impedit nesciunt veritatis repudiandae voluptate error sed a modi aliquam,
                     perferendis enim cumque voluptatibus sapiente iure qui minus. Libero rerum unde aliquam.
                 </p>
             </div>
             <div class="descripcion">
-                <img src="image/hamburguesa3.jpg" alt="Hamburguesa">
+                <img src="image/hamburguesa3.png" alt="Hamburguesa">
                 <p class="prod_detalle"><strong>Hamburguesa doble:</strong> Lorem ipsum dolor sit amet consectetur
                     adipisicing elit. Impedit nesciunt veritatis repudiandae voluptate error sed a modi aliquam,
                     perferendis enim cumque voluptatibus sapiente iure qui minus. Libero rerum unde aliquam.
                 </p>
             </div>
             <div class="descripcion">
-                <img src="image/hamburguesa4.jpg" alt="Hamburguesa">
+                <img src="image/hamburguesa4.png" alt="Hamburguesa">
                 <p class="prod_detalle"><strong>Hamburguesa tripe:</strong> Lorem ipsum dolor sit amet consectetur
                     adipisicing elit. Impedit nesciunt veritatis repudiandae voluptate error sed a modi aliquam,
                     perferendis enim cumque voluptatibus sapiente iure qui minus. Libero rerum unde aliquam.

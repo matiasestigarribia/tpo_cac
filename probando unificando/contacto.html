@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contacto.css">
+     <!--Font Awesome-->
+     <script src="https://kit.fontawesome.com/36335fbf54.js" crossorigin="anonymous"></script>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Raleway:500,600&display=swap" rel="stylesheet">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <!-- Menu de navegación -->
+    <nav>
+        <ul>
+            <li> <a href="index.html">Home</a></li>
+            <li> <a href="productos.html">Productos</a></li>
+            <li> <a href="Nosotros.html">Nosotros</a></li>
+            <li> <a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sección principal -->
+
+    <main>
+        <header class="encabezado">
+            <h1><span id="tit">Contacto</span></h1> 
+        </header>
+
+        <!-- Sección hamburguesas -->
+        <section class="contactos">
+            <form>
+                <label for="nombreapellido">Nombre y Apellido</label>
+                <input type="text" id="nombreapellido" class="input-padron" required placeholder="Diego Torres">
+                <label for="correoelectronico">Correo Electrónico</label>
+                <input type="email" id="correoelectronico" class="input-padron" required placeholder="email@dominio.com" required data-tipo="email">
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" class="input-padron" required placeholder="XX XXXX XXXX" pattern="\d{10}" required minlegth="10" maxlength="10" data-tipo="numero">
+
+                <label for="mensaje">Mensaje</label>
+                <textarea cols="70" rows="10" id="mensaje" class="input-padron" required></textarea>
+                
+                <fieldset>
+                    <legend>¿Cómo le gustaría que lo contactemos?</legend>
+
+                    <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Email</label>
+                    
+                    <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono">Teléfono</label>
+                    
+                    <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
+                    
+                </fieldset>
+            
+                <fieldset>
+                    <legend>¿En cuál horario prefiere ser atendido?</legend>
+                    <select>
+                        <option>Mañana</option>
+                        <option>Tarde</option>
+                        <option>Noche</option>
+                    </select>
+                </fieldset>
+                
+                <label class="checkbox"><input type="checkbox" checked>¿Le gustaría recibir novedades de la Hamburchetos?</label>                
+                
+                <input type="submit" value="Enviar formulario" class="enviar">            
+        </section>
+
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <section class="footer_rs">
+            <ul class="footer__social">                    
+                <li><a href="#" target="_blank"><span class="fa fa-facebook"></span></a></li>
+                <li><a href="#" target="_blank"><span class="fa fa-instagram"></span></a></li>
+                <li><a href="#" target="_blank"><span class="fa fa-youtube-play"></span></a></li>
+                <li><a href="#" target="_blank"><span class="fa fa-linkedin"></span></a></li>
+                <li><a href="#" target="_blank"><span class="fa fa-twitter"></span></a></li>
+                <li><a href="#" target="_blank"><span class="fa-solid fa-envelope"></span></a></li>
+            </ul>
+            <p class="copyright">&copy; 2023 <small><b>Grupo23PythonCaC</b> | Todos los derechos reservados | Términos y condiciones | Protección de datos</small></p>
+        </section>
+    </footer>
+</body>
+</html>

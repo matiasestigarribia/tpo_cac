@@ -2,8 +2,15 @@
 
 
 /* inicio CSS menu de navegacion */
-nav {
-    background-color: #e1ccf5;
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lora', serif;
+    letter-spacing: 3px;
+}
+
+/*nav {
+    background-color: #e2d51a;
     padding: 1rem;
 }
 
@@ -13,11 +20,74 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: left;
+    height: 40px;
+
+}
+
+#logo-empresa{
+    float: center;
+    align-content: center;
+}*/
+nav {
+    display: inline-block;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    justify-content: center;
+    background: linear-gradient(#e2d51a, #f0e661da);
+    height: 86px;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    display: inline-block;
+    align-items: center;
+    padding: 10px;
+    flex-grow: 1;
+}
+
+.navbar ul {
+    width: auto;
+}
+
+.navbar-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-list li {
+    margin-right: 10px;
+}
+
+.navbar-list li a {
+    text-decoration: none;
+    padding: 5px;
+
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 93%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+#logo-empresa {
+    max-width: 85px;
+    height: 85px;
 
 }
 
 nav li:hover {
-    background-color: #af62f8;
+    background-color: #e4ce52;
 }
 
 nav li {
@@ -26,7 +96,7 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: #000;
+    color: #000000;
     font-size: 1.2rem;
 }
 
@@ -36,12 +106,14 @@ nav a {
 /* inicio CSS principal de index.html */
 
 main {
-    background-color: #dab3ff;
+
+    background: linear-gradient(#000, #181818);
+    color: #ffff
 }
 
 .encabezado {
     border-style: solid;
-    border-color: #000;
+    border-color: #b1afaf;
     border-width: 1px;
     display: flex;
     flex-direction: column;
@@ -56,7 +128,7 @@ main {
 
 .titulo {
     font-size: 40px;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Lora', serif;
     margin-bottom: 40px;
     color: #fff;
 }
@@ -83,7 +155,7 @@ main {
 .linea-division {
     width: 80%;
     height: 2px;
-    background-color: #36221c;
+    background-color: #979797;
 }
 
 .fotos {
@@ -93,12 +165,20 @@ main {
     background-color: #000;
 }
 
+form {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lora', serif;
+}
+
 /* fin CSS principal index.html */
 
 /* inicio CSS footer */
 
 footer {
-    background-color: #e1ccf5;
+    background: linear-gradient(#cea10f, #cea10fb2);
     padding: 1rem;
     text-align: center;
 }
@@ -128,13 +208,19 @@ footer li {
 /* inicio CSS productos.html */
 
 .productos {
-    padding-left: 3rem;
+    /*padding-left: 3rem;*/
     border-style: solid;
+
 }
 
 .productos img {
     width: 20rem;
     border-radius: 10px;
+}
+
+.d-block.w-100 {
+    max-width: 60%;
+    margin: auto;
 }
 
 .descripcion {
@@ -152,7 +238,7 @@ footer li {
 }
 
 header h1 {
-    background-color: #dab3ff;
+    /*background-color: #1d1d1d;*/
     text-align: center;
 }
 
@@ -173,7 +259,7 @@ section {
 .carousel-veggie {
     display: flex;
     position: relative;
-    width: 100%;
+    width: auto;
     overflow: hidden;
     margin: 0 auto;
 }
@@ -215,4 +301,9 @@ section {
 
 .is-hidden {
     display: none;
+}
+
+fieldset {
+    display: flex;
+    width: 53%;
 }
