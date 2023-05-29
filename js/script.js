@@ -11,6 +11,7 @@ function initMap() {
         title: "Hamburgueseria",
     });
 }
+window.initMap=initMap;
 
 //animacion del carrousel
 const track = document.querySelector('.carousel__track');
