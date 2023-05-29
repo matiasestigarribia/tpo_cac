@@ -7,9 +7,8 @@
 
 
 nav {
-    display: inline-block;
+    display: flex;
     position: sticky;
-    top: 0;
     z-index: 2;
     width: 100%;
     justify-content: center;
@@ -24,30 +23,27 @@ nav.barra-nav {
 }
 
 div.navbar {
+    display: flex;
     position: sticky;
     top: 0;
-    display: inline-block;
     align-items: center;
     padding: 10px;
     flex-grow: 1;
 }
 
-div.navbar ul {
-    width: auto;
-    margin-left: 8%;
-}
+
 
 .navbar-list {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
+    align-items: center;
 }
 
 .navbar-list li {
     margin-right: 10px;
-    margin-top: 20px;
-    font-size: larger;
+
 }
 
 .navbar-list li a {
@@ -57,12 +53,10 @@ div.navbar ul {
 }
 
 div.contenedor-logo {
-    float: left;
     align-items: center;
     display: flex;
-    height: 130px;
-    width: 130px;
-
+    justify-content: center;
+    flex-grow: 1;
 }
 
 
@@ -71,6 +65,7 @@ div.contenedor-logo {
     height: 400px;
     z-index: 0;
     align-items: center;
+    display: block;
 }
 
 #logo-empresa1 {
@@ -78,6 +73,7 @@ div.contenedor-logo {
     height: 400px;
     z-index: 0;
     align-items: center;
+    display: block;
 }
 
 #logo-empresa2 {
@@ -85,6 +81,7 @@ div.contenedor-logo {
     height: 400px;
     z-index: 0;
     align-items: center;
+    display: block;
 }
 
 #logo-empresa3 {
@@ -92,7 +89,9 @@ div.contenedor-logo {
     height: 400px;
     z-index: 0;
     align-items: center;
+    display: block;
 }
+
 
 /* Media queries for responsiveness */
 @media screen and (max-width: 1200px) {
@@ -103,23 +102,26 @@ div.contenedor-logo {
 
 @media screen and (max-width: 992px) {
     .navbar-list {
-        flex-direction: column;
-        align-items: center;
+        justify-content: center;
+    }
+
+    .navbar-list li {
+        margin-right: 10px;
+        margin-bottom: 0;
     }
 }
 
 @media screen and (max-width: 768px) {
     .navbar-list li {
-        margin-right: 3px;
+        margin-right: 5px;
     }
 }
 
 @media screen and (max-width: 576px) {
     .navbar-list li {
-        margin-right: 2px;
+        margin-right: 3px;
     }
 }
-
 
 nav li:hover {
     background-color: #e4ce52;
