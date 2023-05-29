@@ -91,39 +91,114 @@ div.contenedor-logo {
     align-items: center;
     display: block;
 }
-
-
 /* Media queries for responsiveness */
-@media screen and (max-width: 1200px) {
+
+/* CSS for screen widths from 768px to 1023px */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .productos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .image-wraper{
+        display: flex;
+        
+      }
+    .productos .descripcion {
+      width: 30%;
+      margin-bottom: 30px;
+    }
+    .productos .descripcion img {
+      width: 100%;
+      height: auto;
+    }
     .navbar-list li {
         margin-right: 5px;
     }
-}
+    .logo {
+        width: 50%;
+        height: auto;
+      }
+  }
 
-@media screen and (max-width: 992px) {
-    .navbar-list li {
-        margin-right: 3px;
+
+/* CSS for screen widths from 481px to 767px */
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+    .productos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
     }
-}
-
-@media screen and (max-width: 768px) {
+    .productos .descripcion {
+      width: 45%;
+      margin-bottom: 30px;
+    }
+    .productos .descripcion img {
+      width: 100%;
+      height: auto;
+    }
     .navbar-list {
         flex-wrap: wrap;
         justify-content: center;
     }
-
     .navbar-list li {
         margin-right: 5px;
     }
-}
 
-@media screen and (max-width: 576px) {
+    form{
+        width: 60%;
+    }
+  }
+
+
+  /* CSS for screen widths up to 480px */
+@media only screen and (max-width: 480px) {
+    .productos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .productos .descripcion {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    .productos .descripcion img {
+      width: 100%;
+      height: auto;
+    }
     .navbar-list li {
         margin-right: 3px;
         font-size: x-small;
     }
-}
+    form{
+        width: 80%;
+    }
+  }
 
+/* For screen width 320px */
+   
+@media only screen and (max-width: 320px) {
+    .navbar-list li {
+        margin-right: 3px;
+        font-size: x-small;
+    }
+    .productos {
+      display: block;
+      width: 100%;
+    }
+    
+    .productos .producto {
+      width: 100%;
+    }
+    
+    .logo {
+      width: 80%;
+      height: auto;
+    }
+    form{
+        width: 90%;
+    }
+  }
 
 
 nav li:hover {
@@ -176,6 +251,11 @@ h1 {
 .encabezado img {
     padding: 0.5rem;
     border-radius: 20px;
+}
+
+p.prod_detalle {
+    justify-content: left;
+    margin-left: -45px;
 }
 
 .seccion {
@@ -319,7 +399,7 @@ li.div.legal {
 }
 
 .d-block.w-100 {
-    max-width: 60%;
+    max-width: 50%;
     margin: auto;
 }
 
@@ -408,3 +488,5 @@ fieldset {
     display: flex;
     width: 53%;
 }
+
+
