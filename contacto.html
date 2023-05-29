@@ -6,10 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productos</title>
+    <link rel="shortcut icon" href="image/logohd.jpg" type="image/x-icon">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/contacto.css">
     <!--Font Awesome-->
     <!-- <script src="https://kit.fontawesome.com/36335fbf54.js" crossorigin="anonymous"></script>-->
+    
 
     <!-- Fonts -->
     <!-- <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Raleway:500,600&display=swap" rel="stylesheet">-->
@@ -21,7 +23,7 @@
 
 <body>
     <!-- Menu de navegación -->
-    <nav>
+    <nav class="barra-nav">
         <div class="navbar">
             <ul class="navbar-list">
                 <li> <a href="index.html">Home</a></li>
@@ -29,9 +31,6 @@
                 <li> <a href="Nosotros.html">Nosotros</a></li>
                 <li> <a href="Contacto.html">Contacto</a></li>
             </ul>
-            <div class="logo-container">
-                <img src="image/logo.jpg" alt="Logo de la empresa" id="logo-empresa">
-            </div>
         </div>
     </nav>
 
@@ -39,10 +38,14 @@
 
     <main>
         <header class="encabezado">
-            <h1><span class="tit">Contacto</span> </h1>
-            <h2>Slogan:Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia vero vel </h2>
-        </header>
-
+            <span class="contenedor-logo">
+                <img src="image/logohd.jpg" alt="Logo de la empresa" id="logo-empresa3">
+            </span>
+            </header>
+            <h1>
+                <div class="tit">Contacto</div>
+            </h1>
+            <h2 class="subtitulos">Dejanos tu comentario o tu sugerencia, <br> Tan simple como llenar este formulario y clickear en enviar! </h2>
         <!-- Sección hamburguesas -->
         <section class="contactos">
             <form>
@@ -58,7 +61,7 @@
                 <label for="mensaje">Mensaje</label>
                 <textarea cols="70" rows="10" id="mensaje" class="input-padron" required></textarea>
 
-                <fieldset>
+                <fieldset class="medio-contacto">
                     <legend>¿Cómo le gustaría que lo contactemos?</legend>
 
                     <label for="radio-email"><input type="radio" name="contacto" value="email"
@@ -72,7 +75,7 @@
 
                 </fieldset>
 
-                <fieldset>
+                <fieldset class="horario-contacto">
                     <legend>¿En cuál horario prefiere ser atendido?</legend>
                     <select>
                         <option>Mañana</option>
@@ -81,7 +84,7 @@
                     </select>
                 </fieldset>
 
-                <label class="checkbox"><input type="checkbox" checked>¿Le gustaría recibir novedades de la
+                <label class="checkbox"><input type="checkbox" checked>¿Le gustaría recibir novedades de 
                     Hamburchetos?</label>
 
                 <input type="submit" value="Enviar formulario" class="enviar">
@@ -91,18 +94,16 @@
 
     <!-- Pie de página -->
     <footer>
-        <section class="footer_rs">
-            <ul class="footer__social">
-                <li><a href="#" target="_blank"><span class="fa fa-facebook"></span></a></li>
-                <li><a href="#" target="_blank"><span class="fa fa-instagram"></span></a></li>
-                <li><a href="#" target="_blank"><span class="fa fa-youtube-play"></span></a></li>
-                <li><a href="#" target="_blank"><span class="fa fa-linkedin"></span></a></li>
-                <li><a href="#" target="_blank"><span class="fa fa-twitter"></span></a></li>
-                <li><a href="#" target="_blank"><span class="fa-solid fa-envelope"></span></a></li>
+        <div class="redes">
+            <ul>
+                <li><a href="#"><img src="image/redes/fb1.png" alt="Facebook"></a></li>
+                <li><a href="#"><img src="image/redes/tw1.png" alt="Twitter"></a></li>
+                <li><a href="#"><img src="image/redes/wh1.png" alt="Whatsapp"></a></li>
+                <li><div class="legal">&copy;2023 Derechos reservados</div></li>
             </ul>
-            <p class="copyright">&copy; 2023 <small><b>Grupo23PythonCaC</b> | Todos los derechos reservados | Términos y
-                    condiciones | Protección de datos</small></p>
-        </section>
+        </div>
+
+       
     </footer>
 </body>
 

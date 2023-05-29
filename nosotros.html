@@ -6,16 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre nosotros</title>
+    <link rel="shortcut icon" href="image/logohd.jpg" type="image/x-icon">
     <link href="css/styles.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap" rel="stylesheet">
     <script src="js/script.js" defer></script>
+    
 </head>
 
 <body>
     <!-- Menu de navegación -->
-    <nav>
+    <nav class="barra-nav">
         <div class="navbar">
             <ul class="navbar-list">
                 <li> <a href="index.html">Home</a></li>
@@ -24,22 +26,27 @@
                 <li> <a href="Contacto.html">Contacto</a></li>
             </ul>
             <div class="logo-container">
-                <img src="image/logo.jpg" alt="Logo de la empresa" class="logo-empresa">
+                <!--   <img src="image/logo.jpg" alt="Logo de la empresa" id="logo-empresa"> -->
             </div>
         </div>
     </nav>
 
     <main>
         <header class="encabezado">
-            <h1><span class="tit">Acerca de nosotros</span> </h1>
-            <h2>Slogan:Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia vero vel </h2>
-        </header>
+            <span class="contenedor-logo">
+                <img src="image/logohd.jpg" alt="Logo de la empresa" id="logo-empresa1">
+            </span>
+            </header>
+            <h1>
+                <div class="tit">Acerca de nosotros</div>
+            </h1>
+            <h2 class="subtitulos">Un poco de nuestra historia, quienes somos y donde estamos </h2>
 
         <!-- Quienes somos -->
         <section class="productos">
             <h2>Quienes somos</h2>
             <div class="descripcion">
-                <img src="image/acercadenosotros.jpeg" alt="Sobre nosotros">
+                <img src="image/acercadenosotros.jpg" alt="Sobre nosotros">
                 <p class="prod_detalle"><br><br><br><br><br><br><br><br><strong>Sobre nosotros</strong> Lorem ipsum
                     dolor sit amet consectetur
                     adipisicing elit. Impedit nesciunt veritatis repudiandae voluptate error sed a modi aliquam,
@@ -48,7 +55,7 @@
 
             </div>
             <div class="descripcion">
-                <img src="image/acercadenosotros2.jpeg" alt="Sobre nosotros">
+                <img src="image/acercadenosotros23.jpg" alt="Sobre nosotros">
 
             </div>
         </section>
@@ -73,7 +80,7 @@
         <section class="productos">
             <h2>Nuestra historia</h2>
             <div class="descripcion">
-                <img src="image/nuestrahistoria.jpeg" alt="Nuestra historia">
+                <img src="image/nuestrahistoriaa.jpg" alt="Nuestra historia">
                 <p class="prod_detalle"><br><br><br><br><br><br><br><br><strong>Del sueño a la realidad</strong> Lorem
                     ipsum dolor sit amet consectetur
                     adipisicing
@@ -82,7 +89,7 @@
                 </p>
             </div>
             <div class="descripcion">
-                <img src="image/nuestrahistoria2.jpeg" alt="Nuestra historia">
+                <img src="image/nuestrahistoria2.jpg" alt="Nuestra historia">
             </div>
         </section>
 
@@ -97,10 +104,11 @@
                 <li><a href="#"><img src="image/redes/fb1.png" alt="Facebook"></a></li>
                 <li><a href="#"><img src="image/redes/tw1.png" alt="Twitter"></a></li>
                 <li><a href="#"><img src="image/redes/wh1.png" alt="Whatsapp"></a></li>
+                <li><div class="legal">&copy;2023 Derechos reservados</div></li>
             </ul>
         </div>
 
-        <div class="legal">Derechos reservados</div>
+       
     </footer>
 </body>
 

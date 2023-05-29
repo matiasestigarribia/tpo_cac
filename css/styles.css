@@ -35,11 +35,17 @@ nav {
     z-index: 2;
     width: 100%;
     justify-content: center;
-    background: linear-gradient(#e2d51a, #f0e661da);
+    background: linear-gradient(#f7be21, #f0e661da);
     height: 86px;
 }
 
-.navbar {
+nav.barra-nav {
+    width: 100%;
+    flex-grow: 1;
+
+}
+
+div.navbar {
     position: sticky;
     top: 0;
     display: inline-block;
@@ -48,8 +54,9 @@ nav {
     flex-grow: 1;
 }
 
-.navbar ul {
+div.navbar ul {
     width: auto;
+    margin-left: 8%;
 }
 
 .navbar-list {
@@ -61,6 +68,8 @@ nav {
 
 .navbar-list li {
     margin-right: 10px;
+    margin-top: 20px;
+    font-size: larger;
 }
 
 .navbar-list li a {
@@ -69,21 +78,42 @@ nav {
 
 }
 
-.logo-container {
-    display: flex;
+div.contenedor-logo {
+    float: left;
     align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 93%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 0;
+    display: flex;
+    height: 130px;
+    width: 130px;
+
 }
 
-#logo-empresa {
-    max-width: 85px;
-    height: 85px;
 
+#logo-empresa {
+    max-width: 400px;
+    height: 400px;
+    z-index: 0;
+    align-items: center;
+}
+
+#logo-empresa1 {
+    max-width: 400px;
+    height: 400px;
+    z-index: 0;
+    align-items: center;
+}
+
+#logo-empresa2 {
+    max-width: 400px;
+    height: 400px;
+    z-index: 0;
+    align-items: center;
+}
+
+#logo-empresa3 {
+    max-width: 400px;
+    height: 400px;
+    z-index: 0;
+    align-items: center;
 }
 
 nav li:hover {
@@ -92,12 +122,17 @@ nav li:hover {
 
 nav li {
     margin: 0 1rem;
+
 }
 
 nav a {
     text-decoration: none;
     color: #000000;
     font-size: 1.2rem;
+    letter-spacing: 10%;
+    text-shadow: #363636 1px;
+
+
 }
 
 /* fin CSS menu de navegacion */
@@ -107,17 +142,25 @@ nav a {
 
 main {
 
-    background: linear-gradient(#000, #181818);
-    color: #ffff
+    background: linear-gradient(#000000, #000000);
+    color: #c9c9c9
 }
 
 .encabezado {
-    border-style: solid;
-    border-color: #b1afaf;
-    border-width: 1px;
+    border-bottom: solid;
+    border-color: rgba(30, 30, 30, 1);
+    border-width: 3px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: auto;
+    width: auto;
+
+}
+
+h1 {
+    z-index: 1;
+
 }
 
 .encabezado img {
@@ -125,35 +168,61 @@ main {
     border-radius: 20px;
 }
 
-.seccion{
-    padding:0.5rem;
+.seccion {
+    padding: 0.5rem;
     border-radius: 10px;
     border-style: solid;
-    border-color: #b1afaf;
-    border-width: 1px;
+    border-color: rgba(30, 30, 30, 1);
+    border-width: 3px;
     flex-direction: column;
     align-items: center;
 
 }
-
-.tit {
+.productos{
+border-radius: 10px;
+    border-style: solid;
+    border-color: rgba(30, 30, 30, 1);
+    border-width: 3px;
+}
+div.tit {
     font-size: 40px;
     font-family: 'Lora', serif;
     margin-bottom: 40px;
-    color: #fff;
+    color: #c9c9c9;
+    margin-top: 40px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h2.subtitulos {
+    margin-bottom: 40px;
+    margin-left: 60px;
+    text-align: center;
+    text-transform: lowercase;
+    font-size: 30px;
+}
+
+div.titulo {
+    margin-left: 8.5%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: larger;
+    text-transform: uppercase;
 }
 
 .subtitulo {
-    margin: 0;
+
     color: #000;
     display: inline;
     font-size: 50px;
     font-weight: 500;
     text-transform: uppercase;
+    margin-bottom: 40px;
+    justify-content: center;
 }
 
 .sabor {
-    color: #fff;
+    color: #c9c9c9;
     margin: 7px 0;
     font-size: 50px;
     font-weight: 600;
@@ -188,17 +257,18 @@ form {
 /* inicio CSS footer */
 
 footer {
-    background: linear-gradient(#cea10f, #cea10fb2);
+    background: linear-gradient(#f7be21, #f0e661da);
     padding: 1rem;
     text-align: center;
+    
 }
 
 footer ul {
     list-style: none;
-    margin: 0;
+    margin-left: 30px;
     padding: 0;
     display: flex;
-    justify-content: center;
+    justify-content: left;
 }
 
 footer li {
@@ -209,7 +279,14 @@ footer li {
     border-radius: 7px;
 }
 
-.legal {
+li.div.legal {
+    text-align: left;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    font-size: larger;
+    vertical-align: middle;
+}
+.copywright{
     text-align: left;
 }
 
@@ -263,7 +340,7 @@ section {
     width: 100%;
 }
 
-/*animacion desde javascrit*/
+/*animacion desde javascript*/
 .carousel-cervezas,
 .carousel-hamburguesas,
 .carousel-veggie {

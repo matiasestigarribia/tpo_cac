@@ -1,7 +1,12 @@
 form {
     margin: 40px 0;
     background: rgba(200, 200, 200, .10);
-    border: solid #fff;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: rgb(77, 76, 76);
+    border-width: 3px;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 form label,
@@ -23,6 +28,29 @@ form legend {
     margin: 20px 0;
 }
 
+.horario-contacto{
+    text-align: center;
+    justify-content: center;
+}
+.medio-contacto{
+    text-align: center;
+    justify-content: center;
+}
+input#radio-telefono{
+    margin-left: 20px;
+    letter-spacing: normal;
+    margin-right: 10px;
+}
+input#radio-whatsapp{
+    margin-left: 20px;
+    letter-spacing: normal;
+    margin-right: 10px;
+}
+input#radio-email{
+    margin-left: 20px;
+    letter-spacing: normal;
+    
+}
 .enviar {
     width: 53%;
     justify-content: center;
