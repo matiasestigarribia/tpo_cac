@@ -92,6 +92,12 @@ div.contenedor-logo {
     display: block;
 }
 
+.productos .descripcion p {
+    margin-top: 13%;
+}
+#detalle_acerca{
+    margin-top:  20%; ;
+}
 /* Media queries for responsiveness */
 
 /* CSS for screen widths from 768px to 1023px */
@@ -196,6 +202,9 @@ div.contenedor-logo {
     }
     form {
         width: 80%;
+    }
+    #detalle_acerca{
+        margin-top:  10%; ;
     }
 }
 
