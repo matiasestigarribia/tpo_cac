@@ -97,7 +97,10 @@ div.contenedor-logo {
 }
 
 
-
+.text-end {
+    display: flex;
+    align-items: end;
+}
 
 
 /* Media queries for responsiveness */
@@ -108,10 +111,14 @@ div.contenedor-logo {
     .productos .descripcion {
         width: 100%;
         margin: auto;
+        display: block;
+    }
+    .divIMG{
+        size: 20rem;
     }
 
     .productos .descripcion img {
-        width: 50%;
+        width: 100%;
         height: auto;
         text-align: center;
         
@@ -139,7 +146,11 @@ div.contenedor-logo {
 /* CSS for screen widths from 481px to 767px */
 @media only screen and (min-width: 481px) and (max-width: 767px) {
 
+    .divIMG{
+        size: 20rem;
+    }
     .productos .descripcion {
+        display: block;
         width: auto;
         margin: auto;
     }
