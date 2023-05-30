@@ -120,10 +120,13 @@ div.contenedor-logo {
     .productos .descripcion p {
         width: 50%;
         margin-left: 3px;
-        background: linear-gradient(207.8deg, #201e1c 16.69%, #f7931a 100%);
         padding: 10px 10px;
-        color: #000;
         border-radius: 25px 0 25px 0;
+    }
+
+    #detalle_acerca {
+        margin-top: 40%;
+
     }
 
     .navbar-list li {
@@ -212,7 +215,7 @@ div.contenedor-logo {
 
     #detalle_acerca {
         margin-top: 10%;
-        ;
+
     }
 
     #logo-empresa {
