@@ -125,8 +125,8 @@ div.contenedor-logo {
     }
 
     .productos .descripcion p {
-        width: 50%;
-        margin-left: 3px;
+        width: auto;
+        margin: 10px auto;
         padding: 10px 10px;
         border-radius: 25px 0 25px 0;
     }
@@ -148,6 +148,9 @@ div.contenedor-logo {
 
     .divIMG{
         size: 20rem;
+    }
+    .productos {
+        display: block;
     }
     .productos .descripcion {
         display: block;
@@ -178,8 +181,9 @@ div.contenedor-logo {
     }
 
     .productos .descripcion p {
-        width: 50%;
-        margin-left: 3px;
+        width: auto;
+        margin: 10px auto;
+        
     }
 
     .navbar-list {
@@ -528,7 +532,7 @@ li.div.legal {
 }
 
 .descripcion {
-    display: flex;
+    display: flex; 
     padding: 1rem;
     padding: 0;
     margin-bottom: 0.2rem;
