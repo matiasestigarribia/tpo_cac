@@ -52,6 +52,10 @@ div.navbar {
 
 }
 
+.active {
+    text-decoration: underline;
+}
+
 div.contenedor-logo {
     align-items: center;
     display: flex;
@@ -92,14 +96,9 @@ div.contenedor-logo {
     display: block;
 }
 
-.productos .descripcion p {
-    margin-top: 13%;
-}
 
-#detalle_acerca {
-    margin-top: 20%;
 
-}
+
 
 /* Media queries for responsiveness */
 
@@ -108,13 +107,14 @@ div.contenedor-logo {
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .productos .descripcion {
         width: 100%;
-        margin-bottom: 30px;
+        margin: auto;
     }
 
     .productos .descripcion img {
         width: 50%;
         height: auto;
         text-align: center;
+        
     }
 
     .productos .descripcion p {
@@ -122,11 +122,6 @@ div.contenedor-logo {
         margin-left: 3px;
         padding: 10px 10px;
         border-radius: 25px 0 25px 0;
-    }
-
-    #detalle_acerca {
-        margin-top: 40%;
-
     }
 
     .navbar-list li {
@@ -144,15 +139,25 @@ div.contenedor-logo {
 /* CSS for screen widths from 481px to 767px */
 @media only screen and (min-width: 481px) and (max-width: 767px) {
 
-    .productos {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+    .productos .descripcion {
+        width: auto;
+        margin: auto;
     }
 
-    .productos .descripcion {
-        width: 45%;
-        margin-bottom: 30px;
+    .productos .descripcion img {
+        width: 50%;
+        height: auto;
+        text-align: center;
+        
+    }
+    
+
+    fieldset {
+        border: none;
+    }
+
+    .enviar {
+        width: auto !important;
     }
 
     .productos .descripcion img {
@@ -172,11 +177,11 @@ div.contenedor-logo {
     }
 
     .navbar-list li {
-        margin-right: 5px;
+        margin-right: 2.5px;
     }
 
     form {
-        width: 60%;
+        margin: auto !important;
     }
 
 }
@@ -210,12 +215,15 @@ div.contenedor-logo {
     }
 
     form {
-        width: 80%;
+        margin: auto !important;
     }
 
-    #detalle_acerca {
-        margin-top: 10%;
+    fieldset {
+        border: none;
+    }
 
+    .enviar {
+        width: auto !important;
     }
 
     #logo-empresa {
@@ -241,6 +249,8 @@ div.contenedor-logo {
         height: auto;
         margin: auto;
     }
+    .mob{
+        display:block!important}
 }
 
 /* For screen width 320px */
@@ -260,13 +270,21 @@ div.contenedor-logo {
         width: 100%;
     }
 
+    fieldset {
+        border: none;
+    }
+
     .logo {
         width: 70%;
         height: auto;
     }
 
     form {
-        width: 90%;
+        margin: auto !important;
+    }
+
+    .enviar {
+        width: auto;
     }
 
     #logo-empresa {
@@ -291,6 +309,9 @@ div.contenedor-logo {
         width: 50%;
         height: auto;
         margin: auto;
+    }
+    .mob{
+        display:block!important
     }
 }
 
@@ -381,11 +402,9 @@ div.tit {
 }
 
 h2.subtitulos {
-    margin-bottom: 40px;
-    margin-left: 60px;
+    margin: 40px 30px;
     text-align: center;
     text-transform: lowercase;
-    font-size: 30px;
 }
 
 div.titulo {
